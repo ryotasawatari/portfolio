@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="reset.css">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <title>Uchida ryota/portfolio</title>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="rayoutset">
+      <a href="#top" class="header_rogo">
+        <img src="../portfolio/portfolio_pics/header_rogo.png" alt="ヘッダーロゴ">
+        <p>portfolio</p>
+      </a>
+      <div class="header_menu">
+        <a href="#works">works
+          <div class="line_efect"></div>
+        </a>
+        <a href="#about">about
+          <div class="line_efect"></div>
+        </a>
+        <a href="#contact">contact
+          <div class="line_efect"></div>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <div id="main">
+    
+    <!-- メインビジュアル -->
+    <div class="mainVisual">
+      <div class="mainVisual_background">
+      </div>
+      <h1>uchida ryota</h1>
+    </div>
+    
+    <!-- ステータス -->
+    <section id="status">
+      
+      <div class="status_list">
+        <h3>ディレクション</h3>
+        <h4>DIRECTION</h4>
+        <img src="../portfolio/portfolio_pics/st_direction_icon.png" alt="DIRECTIONアイコン">
+        <p>webデザインに関していえば管理業務は未経験ですが、営業の仕事をしていた際に50人以上の勤怠管理や進捗管理など管理業務を経験をさせて頂きました。クライアントとの折衝やニーズ、要望の事前ヒアリングは普段から一番大切にしています。</p>
+      </div>
+      <div class="status_list">
+        <h3>デザイン</h3>
+        <h4>DESIGN</h4>
+        <img src="../portfolio/portfolio_pics/st_design_icon.png" alt="DESIGNアイコン">
+        <p>20歳からデザイン制作に携わっています。制作物はイベントのフライヤーをメインにロゴ、CDジャケット、名刺、ショップカード、webバナーやアイコン、店舗全般（看板、のぼり、メニュー表など）、カタログ、冊子、動画制作など多岐にわたります。</p>
+      </div>
+      <div class="status_list">
+        <h3>コーディング</h3>
+        <h4>CODING</h4>
+        <img src="../portfolio/portfolio_pics/st_cording_icon.png" alt="CODINGアイコン">
+        <p>コーディングに関しては精通してるとは言えませんがデザイン制作の延長でwebページの画像差し替えや軽微な修正などの経験がありHTML/CSS/JavaScriptを一通り扱えます。コーディング業務に対してすごく興味があるため更にスキルアップさせたいと考えております。</p>
+      </div>
+      
+    </section>
+
+    <!-- 制作実績 -->
+    <section id="works">
+      <h2>works</h2>
+      <div id="works_lineup">
+
+        <div id="openDisplay" class="border_efect"> 
+            <img src="../portfolio/portfolio_pics/workspic_pomaikai.jpg" alt="制作物画像">
+        </div>
+
+        <div class="border_efect" onclick="click2()">
+          <img src="../portfolio/portfolio_pics/workspic_jackshine.jpg" alt="制作物画像">
+        </div>
+
+        <div class="border_efect" onclick="click3()">
+          <img src="../portfolio/portfolio_pics/workspic_djklismix.jpg" alt="制作物画像">
+        </div>
+
+        <div class="border_efect" onclick="click4()">
+          <img src="../portfolio/portfolio_pics/workspic_hokuei.jpg" alt="制作物画像">
+        </div>
+
+      </div>
+      
+      <!-- 制作実績詳細/pomaikai -->
+      <div id="works_panel1">
+        <div id="triangle" class="triangle_position1"></div>
+        <div class="works_container">
+          <div class="works_container_sizing">
+            <img src="../portfolio/portfolio_pics/workszoom_pomaikai.jpg" alt="制作物画像">
+            <div id="works_text1">
+              <h2 class="text_year">2019</h2>
+              <h2>案件概要</h2>
+              <h2>関わり方</h2>
+            </div>
+            <div id="works_text2">
+              <h1><span>フラワーレッスン&ショップ</span>
+                <br>pomaikai
+              </h1>
+              <h4>フラワーショップのロゴ、名刺、ショップカードなどのブランディングを担当。</h4>
+            </div>
+            <div id="works_text3">
+              <h4>グラフィックデザイン</h4>
+            </div>
+            <div id="works_text4">
+              <h2>作業期間</h2>
+              <h2>使用ツール</h2>
+            </div>
+            <div id="works_text5">
+              <h3>1ヶ月</h3>
+              <h3>Photoshop/Illustrator</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 制作実績詳細/jackshine -->
+      <div id="works_panel2">
+        <div id="triangle" class="triangle_position2"></div>
+        <div class="works_container">
+          <div class="works_container_sizing">
+            <img src="../portfolio/portfolio_pics/workszoom_jackshine.jpg" alt="制作物画像">
+            <div id="works_text1">
+              <h2 class="text_year">2018</h2>
+              <h2>案件概要</h2>
+              <h2>関わり方</h2>
+            </div>
+            <div id="works_text2">
+              <h1><span>ファッションブランド</span>
+                <br>JACK SHINE
+              </h1>
+              <h4>ブランドロゴのリニューアル、Tシャツのデザインを担当。</h4>
+            </div>
+            <div id="works_text3">
+              <h4>ファッション</h4>
+            </div>
+            <div id="works_text4">
+              <h2>作業期間</h2>
+              <h2>使用ツール</h2>
+            </div>
+            <div id="works_text5">
+              <h3>1ヶ月</h3>
+              <h3>Photoshop/Illustrator</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 制作実績詳細/dj KLAIS -->
+      <div id="works_panel3">
+        <div id="triangle" class="triangle_position3"></div>
+        <div class="works_container">
+          <div class="works_container_sizing">
+            <img src="../portfolio/portfolio_pics/workszoom_djklismix.jpg" alt="制作物画像">
+            <div id="works_text1">
+              <h2 class="text_year">2017</h2>
+              <h2>案件概要</h2>
+              <h2>関わり方</h2>
+            </div>
+            <div id="works_text2">
+              <h1><span>DJ KLAIS mixcd</span>
+                <br>HIPHOP × SEXYGIRL vol.2
+              </h1>
+              <h4>DJ KLAISのミックスCDシリーズのジャケットデザインを担当。</h4>
+            </div>
+            <div id="works_text3">
+              <h4>グラフィックデザイン</h4>
+            </div>
+            <div id="works_text4">
+              <h2>作業期間</h2>
+              <h2>使用ツール</h2>
+            </div>
+            <div id="works_text5">
+              <h3>3週間</h3>
+              <h3>Photoshop</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 制作実績詳細/hokuei -->
+      <div id="works_panel4">
+        <div id="triangle" class="triangle_position4"></div>
+        <div class="works_container">
+          <div class="works_container_sizing">
+            <img src="../portfolio/portfolio_pics/workszoom_hokuei.jpg" alt="制作物画像">
+            <div id="works_text1">
+              <h2 class="text_year">2019</h2>
+              <h2>案件概要</h2>
+              <h2>関わり方</h2>
+            </div>
+            <div id="works_text2">
+              <h1>株式会社HOKUEI EXTERIOR</h1>
+              <h4>会社ロゴのリニューアル、チラシの制作を担当。</h4>
+            </div>
+            <div id="works_text3">
+              <h4>グラフィックデザイン</h4>
+            </div>
+            <div id="works_text4">
+              <h2>作業期間</h2>
+              <h2>使用ツール</h2>
+            </div>
+            <div id="works_text5">
+              <h3>2週間</h3>
+              <h3>Photoshop/Illustrator</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- プロフィール -->
+    <section id="about">
+      <h2>about</h2>
+      <img src="../portfolio/portfolio_pics/about_pic.jpg" alt="プロフィール写真">
+      <div class="about_text">
+        <p class="about_name">内田 龍太</p>
+        <p class="about_name2">uchida ryota</p>
+        <h3>skill</h3>
+        <p class="about_skill">Photoshop/Illustrator</p>
+        <p  class="about_skill">Exel/Word/PowerPoint</p>
+        <p  class="about_skill">HTML/CSS/JavaScript</p>
+        <p class="about_message">
+          ポートフォリオの拝見ありがとうございます。<br>
+        普段から作っている制作物に偏りがあるため対照的にシンプルなモノにしました。<br>
+        webデザインの知識やコーディング技術をバージョンアップして<br>
+        よりよいモノを生み出せるよう励んでいます。</p>
+      </div>
+
+    </section>
+    
+    <!-- お問い合わせ -->
+    <section id="contact">
+      <h2>contact</h2>
+      <div class="contact_box">
+        <dl>
+          <dt>お名前
+            <span>必須</span>
+          </dt>
+          <dd><input name="お名前" type="text" placeholder="お名前" class="contact_input"></dd>
+          <dt>会社名</dt>
+          <dd><input name="会社名" type="text" placeholder="会社名" class="contact_input">
+          </dd>
+          <dt>メールアドレス
+            <span>必須</span>
+          </dt>
+          <dd><input name="メールアドレス" placeholder="メールアドレス" type="text" class="contact_input">
+          </dd>
+          <dt>お問い合わせ内容
+            <span>必須</span>
+          </dt>
+          <dd><textarea name="お問い合わせ内容" class="contact_textarea" cols="30" rows="10"></textarea></dd>
+        </dl>
+        <div class="btn border_efect">
+          <input type="button" value="送信">
+        </div>
+      </div>
+      
+      
+    </section>
+    
+  </div>
+  
+  <!-- フッター -->
+  <footer>
+    <div class="rayoutset">
+      <div class="footer_menu">
+        <a href="#top">top
+          <div class="line_efect"></div>
+        </a>
+        <a href="#works">works
+          <div class="line_efect"></div>
+        </a>
+        <a href="#about">about
+          <div class="line_efect"></div>
+        </a>
+      </div>
+      <div class="footer_copyright">
+        <p>©uchida ryota portfolio All right reserved.</p>
+      </div>
+    </div>
+    
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

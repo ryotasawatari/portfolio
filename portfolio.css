@@ -1,0 +1,552 @@
+
+/* 基本設定 */
+body {
+  font-family: 'Yu Mincho Bold','YuMincho','Yu Mincho','游明朝体','メイリオ', Meiryo,sans-serif;
+  color: #343434;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.rayoutset {
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_rogo {
+  display: flex;
+}
+
+.header_rogo img {
+  margin: 20px;
+  height: 50px;
+  width: auto;
+}
+
+.header_rogo p {
+  font-size: 35px;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.header_menu {
+  font-size: 20px;
+  display: flex;
+  margin: 20px;
+}
+
+.header_menu a {
+  margin: 20px;
+}
+
+/* メイン */
+#main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* メインビジュアル */
+.mainVisual {
+  margin-top: 120px;
+  height: 500px;
+  position: relative;
+}
+
+.mainVisual h1 {
+  font-size: 120px;
+  position: absolute;
+  top: 150px;
+  font-weight: bold;
+}
+
+.mainVisual_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url(../portfolio/portfolio_pics/top_pic.jpg);
+  opacity: 0.7;
+}
+
+/* ステータス */
+#status {
+  width: 90%;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.status_list {
+  float: left;
+  width: 30%;
+  margin-left: 25px;
+}
+
+.status_list h3 {
+  font-size: 25px;
+}
+
+.status_list h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 0.3;
+  color: #6b6b6b;
+}
+
+.status_list p {
+  width: 97%;
+  font-size: 13px;
+  line-height: 22px;
+  margin:  0 auto;
+}
+
+.status_list img {
+  width: 150px;
+  height: auto;
+  margin: 50px 0;
+}
+
+/* 制作実績 */
+
+#works {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+
+#works > h2 {
+  font-size: 80px;
+}
+
+#works_lineup {
+  display: flex;
+  margin: 0 20px;
+}
+
+.border_efect {
+  border: 5px solid #d6d6d6;
+  margin: 50px 20px 0 20px;
+  text-align: center;
+  position: relative;
+  transition: all .2s;
+  z-index: 5;
+  
+}
+
+#works_lineup img{
+  width: 180px;
+  height: 180px;
+}
+
+/* 制作実績詳細 */
+
+/* 表示切替 */
+#works_panel1 {
+  display: none;
+}
+
+#works_panel2 {
+  display: none;
+}
+
+#works_panel3 {
+  display: none;
+}
+
+#works_panel4 {
+  display: none;
+}
+
+/* 矢印 */
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #d6d6d6;
+}
+
+/* 矢印/位置切り替え */
+.triangle_position1 {
+  margin-left: 110px;
+}
+.triangle_position2 {
+  margin-left: 285px;
+}
+
+.triangle_position3 {
+  margin-left: 510px;
+}
+
+.triangle_position4 {
+  margin-left: 735px;
+}
+
+/* コンテナスタイリング */
+
+.works_container {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  height: 400px;
+  background-color: #f7f7f7;
+  box-shadow: 10px 0 10px #343434 inset;
+}
+
+.works_container_sizing {
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.works_container img {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top:50px;
+  left: 20px;
+  box-shadow: 10px 0 10px #d6d6d6;
+}
+
+/* 文字スタイリング */
+.works_container h1 {
+  width: 280px;
+  font-size: 30px;
+  border-top: 2px solid #343434;
+  padding: 10px 0 10px 10px;
+}
+
+.works_container h2 {
+  width: 100px;
+  font-size: 15px;
+  border-top: 3px solid #343434;
+  padding: 10px 0 10px 10px;
+}
+
+.works_container h3 {
+  width: 160px;
+  font-size: 15px;
+  border-top: 2px solid #343434;
+  padding: 10px 0 10px 10px;
+}
+
+.works_container h4 {
+  width: 280px;
+  font-size: 15px;
+  border-top: 2px solid #343434;
+  padding: 10px 0 10px 10px;
+}
+
+.works_container span {
+  font-size: 20px;
+}
+
+/* フレーム位置スタイリング */
+#works_text1 {
+  position: absolute;
+  top: 50px;
+  left: 460px;
+}
+
+#works_text2 {
+  position: absolute;
+  top: 50px;
+  left: 580px;
+}
+
+#works_text3 {
+  position: absolute;
+  top: 240px;
+  left: 580px;
+}
+
+#works_text4 {
+  position: absolute;
+  top: 280px;
+  left: 580px;
+}
+
+#works_text5 {
+  position: absolute;
+  top: 280px;
+  left: 700px;
+}
+
+.text_year {
+  margin-bottom: 150px;
+}
+
+/* プロフィール */
+#about {
+  padding-top: 150px;
+  margin-top: -50px;
+  position: relative;
+}
+
+#about h2 {
+  font-size: 80px;
+  text-align: right;
+}
+
+#about img {
+  width: 300px;
+  height: auto;
+}
+
+.about_text {
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  line-height: 22px;
+}
+
+.about_name {
+  font-size: 30px;
+}
+.about_name2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.about_text h3 {
+  margin-top: 30px;
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.about_skill {
+  margin-top: 5px;
+}
+.about_message {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* お問い合わせ */
+#contact h2 {
+  margin: 100px 0 40px;
+  font-size: 80px;
+}
+
+.contact_box {
+position: relative;
+}
+
+#contact dt {
+  font-size: 20px;
+  margin: 0 0 40px 150px;
+  float: left;
+}
+
+#contact span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #343434;
+  color: #fff;
+  font-size: 10px;
+  vertical-align: text-top;
+  padding: 7px 0 0 2px;
+}
+
+#contact dd {
+  font-size: 20px;
+  margin: 0 0 50px 0;
+  text-align: right;
+}
+
+.contact_input {
+  width: 500px;
+  height: 20px;
+  border-bottom: 2px solid #343434;
+  text-align: left;
+}
+
+.contact_textarea {
+  width: 500px;
+  height: 200px;
+  border-bottom: 2px solid #343434;
+  text-align: left;
+}
+
+#contact textarea:hover {
+  border: 2px solid #343434;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #343434;
+  text-align: center;
+  line-height: 43px;
+  border: 3px solid #d6d6d6;
+  box-sizing: border-box;
+  margin: -30px 0 50px 400px;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f7f7f7;
+}
+
+.footer_menu {
+  font-size: 20px;
+  display: flex;
+  margin-top: 15px;
+}
+
+.footer_menu a {
+  margin-right: 40px;
+}
+
+.footer_copyright {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* エフェクト */
+
+/* ヘッダーメニュー */
+
+.line_efect {
+  width: 0px;
+  height: 2px;
+  background-color: #343434;
+  transition: all 0s ;
+}
+
+.header_menu a:hover > .line_efect {
+  width: 100%;
+  transition: all 300ms 0s ease;
+}
+
+.header_menu a:active {
+  color: #d6d6d6;
+  transition: all 300ms 0s ease;
+}
+
+.header_menu a:active > .line_efect {
+  background-color: #d6d6d6;
+}
+
+.footer_menu a:hover > .line_efect {
+  width: 100%;
+  transition: all 300ms 0s ease;
+}
+
+.footer_menu a:active {
+  color: #d6d6d6;
+  transition: all 300ms 0s ease;
+}
+
+.footer_menu a:active > .line_efect {
+  background-color: #d6d6d6;
+}
+
+/* 枠線エフェクト */
+
+.border_efect::before,
+.border_efect::after {
+  position: absolute;
+  z-index: 2;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+}
+
+.border_efect::before {
+  top: -5px;
+  left: -5px;
+}
+
+.border_efect::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+.border_efect:hover::before,
+.border_efect:hover::after {
+  width: 105%;
+  height: 105%;
+}
+
+
+.border_efect:hover::before {
+  border-bottom-color: #6b6b6b;
+  border-left-color: #6b6b6b;
+  transition: height .2s, width .2s .2s;
+}
+.border_efect:hover::after {
+  border-top-color: #6b6b6b;
+  border-right-color: #6b6b6b;
+  transition: height .2s .4s, width .2s .6s;
+}
+
+.contact_box>.border_efect::before,
+.contact_box>.border_efect::after {
+  position: absolute;
+  z-index: 2;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+}
+
+.contact_box>.border_efect::before {
+  top: -3.5px;
+  left: -3px;
+}
+
+.contact_box>.border_efect::after {
+  bottom: -4px;
+  right: -3px;
+}
+
+.contact_box>.border_efect:hover::before,
+.contact_box>.border_efect:hover::after {
+  width: 103%;
+  height: 116%;
+}
+
+.contact_box>.border_efect:hover::before {
+  border-bottom-color: #6b6b6b;
+  border-left-color: #6b6b6b;
+  transition: height .2s, width .2s .2s;
+}
+.contact_box>.border_efect:hover::after {
+  border-top-color: #6b6b6b;
+  border-right-color: #6b6b6b;
+  transition: height .2s .4s, width .2s .6s;
+}
+
+#works_lineup > .border_efect:active {
+  opacity: 0.5;
+}
+
+.btn:active {
+  font-weight: bold;
+  background-color: #f7f7f7;
+  transition: background-color 300ms;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
