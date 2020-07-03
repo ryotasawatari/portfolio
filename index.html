@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 800px)"> 
   <link rel="stylesheet" href="reset.css">
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <title>Uchida ryota/portfolio</title>
@@ -17,6 +18,8 @@
         <img src="../portfolio/portfolio_pics/header_rogo.png" alt="ヘッダーロゴ">
         <p>portfolio</p>
       </a>
+
+      <!-- ヘッダーメニュー -->
       <div class="header_menu">
         <a href="#works">works
           <div class="line_efect"></div>
@@ -28,7 +31,24 @@
           <div class="line_efect"></div>
         </a>
       </div>
+      
+      <!-- レスポンシブ用メニュー -->
+      <div class="header_menu2">
+        <div class="menu_btn"><span>menu</span></div>
+        <div class="menu_list">
+          <ul>
+            <li><a href="#top">top</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
+
+  </div>
+
   </header>
   
   <div id="main">
@@ -69,7 +89,7 @@
       <h2>works</h2>
       <div id="works_lineup">
 
-        <div id="openDisplay" class="border_efect"> 
+        <div class="border_efect" onclick="click1()"> 
             <img src="../portfolio/portfolio_pics/workspic_pomaikai.jpg" alt="制作物画像">
         </div>
 
@@ -78,7 +98,7 @@
         </div>
 
         <div class="border_efect" onclick="click3()">
-          <img src="../portfolio/portfolio_pics/workspic_djklismix.jpg" alt="制作物画像">
+          <img src="../portfolio/portfolio_pics/workspic_slowyoga.jpg" alt="制作物画像">
         </div>
 
         <div class="border_efect" onclick="click4()">
@@ -89,31 +109,38 @@
       
       <!-- 制作実績詳細/pomaikai -->
       <div id="works_panel1">
-        <div id="triangle" class="triangle_position1"></div>
+
+        <div class="triangle_resize">
+          <div id="triangle" class="triangle_position1"></div>
+        </div>
+
         <div class="works_container">
           <div class="works_container_sizing">
             <img src="../portfolio/portfolio_pics/workszoom_pomaikai.jpg" alt="制作物画像">
-            <div id="works_text1">
-              <h2 class="text_year">2019</h2>
-              <h2>案件概要</h2>
-              <h2>関わり方</h2>
-            </div>
-            <div id="works_text2">
-              <h1><span>フラワーレッスン&ショップ</span>
-                <br>pomaikai
-              </h1>
-              <h4>フラワーショップのロゴ、名刺、ショップカードなどのブランディングを担当。</h4>
-            </div>
-            <div id="works_text3">
-              <h4>グラフィックデザイン</h4>
-            </div>
-            <div id="works_text4">
-              <h2>作業期間</h2>
-              <h2>使用ツール</h2>
-            </div>
-            <div id="works_text5">
-              <h3>1ヶ月</h3>
-              <h3>Photoshop/Illustrator</h3>
+
+            <div id="works_texts">
+              <div id="works_text1">
+                <h2 class="text_year">2019</h2>
+                <h2>案件概要</h2>
+                <h2>関わり方</h2>
+              </div>
+              <div id="works_text2">
+                <h1><span>フラワーレッスン&ショップ</span>
+                  <br>pomaikai
+                </h1>
+                <h4>フラワーショップのロゴ、名刺、ショップカードなどのブランディングを担当。</h4>
+              </div>
+              <div id="works_text3">
+                <h4>グラフィックデザイン</h4>
+              </div>
+              <div id="works_text4">
+                <h2>作業期間</h2>
+                <h2>使用ツール</h2>
+              </div>
+              <div id="works_text5">
+                <h3>1ヶ月</h3>
+                <h3>Photoshop/Illustrator</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -121,63 +148,77 @@
 
       <!-- 制作実績詳細/jackshine -->
       <div id="works_panel2">
-        <div id="triangle" class="triangle_position2"></div>
+
+        <div class="triangle_resize">
+          <div id="triangle" class="triangle_position2"></div>
+        </div>
+
         <div class="works_container">
           <div class="works_container_sizing">
             <img src="../portfolio/portfolio_pics/workszoom_jackshine.jpg" alt="制作物画像">
-            <div id="works_text1">
-              <h2 class="text_year">2018</h2>
-              <h2>案件概要</h2>
-              <h2>関わり方</h2>
-            </div>
-            <div id="works_text2">
-              <h1><span>ファッションブランド</span>
-                <br>JACK SHINE
-              </h1>
-              <h4>ブランドロゴのリニューアル、Tシャツのデザインを担当。</h4>
-            </div>
-            <div id="works_text3">
-              <h4>ファッション</h4>
-            </div>
-            <div id="works_text4">
-              <h2>作業期間</h2>
-              <h2>使用ツール</h2>
-            </div>
-            <div id="works_text5">
-              <h3>1ヶ月</h3>
-              <h3>Photoshop/Illustrator</h3>
+
+            <div id="works_texts">
+              <div id="works_text1">
+                <h2 class="text_year">2018</h2>
+                <h2>案件概要</h2>
+                <h2>関わり方</h2>
+              </div>
+              <div id="works_text2">
+                <h1><span>ファッションブランド</span>
+                  <br>JACK SHINE
+                </h1>
+                <h4>ブランドロゴのリニューアル、Tシャツのデザインを担当。</h4>
+              </div>
+              <div id="works_text3">
+                <h4>ファッション</h4>
+              </div>
+              <div id="works_text4">
+                <h2>作業期間</h2>
+                <h2>使用ツール</h2>
+              </div>
+              <div id="works_text5">
+                <h3>1ヶ月</h3>
+                <h3>Photoshop/Illustrator</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 制作実績詳細/dj KLAIS -->
+      <!-- 制作実績詳細/slowyoga -->
       <div id="works_panel3">
-        <div id="triangle" class="triangle_position3"></div>
+
+        <div class="triangle_resize">
+          <div id="triangle" class="triangle_position3"></div>
+        </div>
+
         <div class="works_container">
           <div class="works_container_sizing">
-            <img src="../portfolio/portfolio_pics/workszoom_djklismix.jpg" alt="制作物画像">
-            <div id="works_text1">
-              <h2 class="text_year">2017</h2>
-              <h2>案件概要</h2>
-              <h2>関わり方</h2>
-            </div>
-            <div id="works_text2">
-              <h1><span>DJ KLAIS mixcd</span>
-                <br>HIPHOP × SEXYGIRL vol.2
-              </h1>
-              <h4>DJ KLAISのミックスCDシリーズのジャケットデザインを担当。</h4>
-            </div>
-            <div id="works_text3">
-              <h4>グラフィックデザイン</h4>
-            </div>
-            <div id="works_text4">
-              <h2>作業期間</h2>
-              <h2>使用ツール</h2>
-            </div>
-            <div id="works_text5">
-              <h3>3週間</h3>
-              <h3>Photoshop</h3>
+            <img src="../portfolio/portfolio_pics/workszoom_slowyoga.jpg" alt="制作物画像">
+
+            <div id="works_texts">
+              <div id="works_text1">
+                <h2 class="text_year">2017</h2>
+                <h2>案件概要</h2>
+                <h2>関わり方</h2>
+              </div>
+              <div id="works_text2">
+                <h1><span>ヨガ教室</span>
+                  <br>SLOW YOGA
+                </h1>
+                <h4>ヨガ教室のロゴ、ショップカード、チラシ、webバナーなどを制作</h4>
+              </div>
+              <div id="works_text3">
+                <h4>グラフィック,webデザイン</h4>
+              </div>
+              <div id="works_text4">
+                <h2>作業期間</h2>
+                <h2>使用ツール</h2>
+              </div>
+              <div id="works_text5">
+                <h3>3週間</h3>
+                <h3>Photoshop</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -185,29 +226,37 @@
 
       <!-- 制作実績詳細/hokuei -->
       <div id="works_panel4">
-        <div id="triangle" class="triangle_position4"></div>
+
+        <div class="triangle_resize">
+          <div id="triangle" class="triangle_position4"></div>
+        </div>
+
         <div class="works_container">
           <div class="works_container_sizing">
             <img src="../portfolio/portfolio_pics/workszoom_hokuei.jpg" alt="制作物画像">
-            <div id="works_text1">
-              <h2 class="text_year">2019</h2>
-              <h2>案件概要</h2>
-              <h2>関わり方</h2>
-            </div>
-            <div id="works_text2">
-              <h1>株式会社HOKUEI EXTERIOR</h1>
-              <h4>会社ロゴのリニューアル、チラシの制作を担当。</h4>
-            </div>
-            <div id="works_text3">
-              <h4>グラフィックデザイン</h4>
-            </div>
-            <div id="works_text4">
-              <h2>作業期間</h2>
-              <h2>使用ツール</h2>
-            </div>
-            <div id="works_text5">
-              <h3>2週間</h3>
-              <h3>Photoshop/Illustrator</h3>
+
+            <div id="works_texts">
+              <div id="works_text1">
+                <h2 class="text_year">2019</h2>
+                <h2>案件概要</h2>
+                <h2>関わり方</h2>
+              </div>
+              <div id="works_text2">
+                <h1><span>株式会社</span><br>
+                  HOKUEI EXTERIOR</h1>
+                <h4>会社ロゴのリニューアル、チラシの制作を担当。</h4>
+              </div>
+              <div id="works_text3">
+                <h4>グラフィックデザイン</h4>
+              </div>
+              <div id="works_text4">
+                <h2>作業期間</h2>
+                <h2>使用ツール</h2>
+              </div>
+              <div id="works_text5">
+                <h3>2週間</h3>
+                <h3>Photoshop/Illustrator</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -289,6 +338,7 @@
     
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="portfolio.js"></script>
 </body>
 </html>
